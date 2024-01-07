@@ -1,0 +1,15 @@
+.myrow{
+  margin: 10px;
+}
+.mycontainer{
+  margin: 15px auto;
+}
+input{
+  width: 100%;
+  border-radius:5px 5px;
+}
+.mybtn{
+  width: 50%;
+  /* height: 5px; */
+  
+}

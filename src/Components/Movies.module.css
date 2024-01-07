@@ -1,0 +1,16 @@
+.card{
+  width: 18rem;
+  margin: 10px;
+}
+span{
+  font-weight: bold;
+}
+.image{
+  width: 100%;
+  height: 200px;
+}
+.sbtn{
+  width: 50%;
+  margin:10px auto;
+  
+}
