@@ -1,7 +1,9 @@
 import { useContext, useRef, useState } from "react";
 import styles from "./AddMovie.module.css";
 import { MovieItemContext } from "../store/Movie-item-store";
+import { useNavigate } from "react-router-dom";
 function AddMovie() {
+  const navigate = useNavigate();
   //using state
   // let [addName, setAddName] = useState();
   // let [addCast, setAddCast] = useState();
@@ -52,6 +54,7 @@ function AddMovie() {
     console.log(addName, addCast, addIMBD, addDirectorName, addUrl);
 
     addButtonClick(addName, addCast, addIMBD, addDirectorName, addUrl);
+    navigate("/");
     // setAddName("");
     // setAddCast("");
     // setAddImbd("");
@@ -64,7 +67,7 @@ function AddMovie() {
       <form action="" onSubmit={onButtonClick}>
         <div className={`container text-center ${styles.mycontainer}`}>
           <div className={`${styles.myrow} row`}>
-            <div className="col-5">
+            <div className="col-8">
               {" "}
               <input
                 type="text"
@@ -74,7 +77,7 @@ function AddMovie() {
               ></input>{" "}
             </div>
 
-            <div className="col-5">
+            <div className="col-8">
               <input
                 type="text"
                 placeholder="Enter Cast Name"
@@ -82,7 +85,7 @@ function AddMovie() {
                 // onChange={addCastName}
               ></input>
             </div>
-            <div className="col-2">
+            <div className="col-8">
               <input
                 type="text"
                 placeholder="Enter IMBD Rating"
@@ -92,7 +95,7 @@ function AddMovie() {
             </div>
           </div>
           <div className={`${styles.myrow} row`}>
-            <div className="col-5">
+            <div className="col-8">
               <input
                 type="text"
                 placeholder="Enter Director Name"
@@ -100,7 +103,7 @@ function AddMovie() {
                 // onChange={addDirector}
               ></input>
             </div>
-            <div className="col-5">
+            <div className="col-8">
               <input
                 type="text"
                 placeholder="Enter Movie url"
@@ -108,7 +111,7 @@ function AddMovie() {
                 // onChange={addURL}
               />
             </div>
-            <div className="col-2">
+            <div className="col-6">
               <button
                 type="submit"
                 className={`btn btn-success ${styles.mybtn}`}

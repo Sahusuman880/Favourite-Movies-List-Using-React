@@ -4,7 +4,12 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
 }
 input{
-  width: 100%;
+  width: 80%;
+  
+}
+.col-8{
+  margin: 25px 0px;
 }

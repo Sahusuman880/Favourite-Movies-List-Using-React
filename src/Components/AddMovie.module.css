@@ -1,8 +1,13 @@
 .myrow{
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 .mycontainer{
-  margin: 15px auto;
+  margin: 10px auto;
 }
 input{
   width: 100%;
